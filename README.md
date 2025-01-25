@@ -17,3 +17,12 @@ Inside simulator, press cmd + D to open developer tool
 1. Flex layout
 
 - [Example Box Items](./examples/ExampleBoxItems.tsx)
+
+2. Icons
+
+- [Expo Icons](https://github.com/expo/vector-icons)
+- [List expo icons](https://icons.expo.fyi/Index)
+
+```sh
+npm i @expo/vector-icons --save
+```

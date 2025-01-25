@@ -1,6 +1,7 @@
 import { SafeAreaView, StyleSheet, Text, View } from "react-native";
 import ExampleBoxItems from "./examples/ExampleBoxItems";
 import { useState } from "react";
+import ExampleUserProfile from "./examples/ExampleUserProfile";
 
 export default function App() {
   const [selectedItem, setSelectedItem] = useState<string | null>(null);
@@ -16,7 +17,8 @@ export default function App() {
           <Text>Selected Item : {selectedItem}</Text>
         </View>
       )}
-      <ExampleBoxItems setSelectedItem={setSelectedItem} />
+      {/* <ExampleBoxItems setSelectedItem={setSelectedItem} /> */}
+      <ExampleUserProfile />
     </SafeAreaView>
   );
 }
