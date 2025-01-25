@@ -1,14 +1,22 @@
-import { SafeAreaView, StyleSheet } from "react-native";
+import { SafeAreaView, StyleSheet, Text, View } from "react-native";
 import ExampleBoxItems from "./examples/ExampleBoxItems";
+import { useState } from "react";
 
 export default function App() {
+  const [selectedItem, setSelectedItem] = useState<string | null>(null);
+
   return (
     <SafeAreaView
       style={{
-        height: "100%",
+        flex: 1,
       }}
     >
-      <ExampleBoxItems />
+      {selectedItem && (
+        <View style={{}}>
+          <Text>Selected Item : {selectedItem}</Text>
+        </View>
+      )}
+      <ExampleBoxItems setSelectedItem={setSelectedItem} />
     </SafeAreaView>
   );
 }

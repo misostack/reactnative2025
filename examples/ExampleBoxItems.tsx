@@ -1,4 +1,4 @@
-import { DimensionValue, View, Text } from "react-native";
+import { DimensionValue, View, Text, TouchableOpacity } from "react-native";
 
 enum BoxColors {
   Red = "red",
@@ -11,7 +11,10 @@ enum BoxColors {
   Brown = "brown",
 }
 
-export default function ExampleBoxItems() {
+export default function ExampleBoxItems(props: {
+  setSelectedItem: (item: string) => void;
+}) {
+  const { setSelectedItem } = props;
   const items = [
     { color: BoxColors.Red, text: "Item 1" },
     { color: BoxColors.Green, text: "Item 2" },
@@ -33,7 +36,8 @@ export default function ExampleBoxItems() {
       }}
     >
       {items.map((item, index) => (
-        <View
+        <TouchableOpacity
+          onPress={() => setSelectedItem(item.text)}
           key={`box-item-${index}`}
           style={{
             flex: 1,
@@ -45,8 +49,8 @@ export default function ExampleBoxItems() {
             justifyContent: "center",
           }}
         >
-          <Text>{`Item ${index + 1}`}</Text>
-        </View>
+          <Text>{item.text}</Text>
+        </TouchableOpacity>
       ))}
     </View>
   );
