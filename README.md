@@ -35,3 +35,12 @@ npm i @expo/vector-icons --save
 
 - [Debug Expo React Native App](https://docs.expo.dev/debugging/tools/#pausing-on-breakpoints)
 - [VScode Extension for Expo](https://marketplace.visualstudio.com/items?itemName=expo.vscode-expo-tools)
+
+5. Dotenv with React Native
+
+- [Expo built-in env](https://docs.expo.dev/guides/environment-variables/)
+
+```
+EXPO_PUBLIC_API_URL=https://staging.example.com
+EXPO_PUBLIC_API_KEY=abc123
+```
