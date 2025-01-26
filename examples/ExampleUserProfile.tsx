@@ -1,11 +1,19 @@
-import { Text, View } from "react-native";
+import {
+  Image,
+  ImageBackground,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import {
   IconContact,
+  IconEdit,
   IconHome,
   IconInfo,
   IconNews,
   IconService,
 } from "../components/icons";
+import { IMAGES } from "../constants/images";
 
 export default function ExampleUserProfile() {
   return (
@@ -17,15 +25,36 @@ export default function ExampleUserProfile() {
         <IconContact color="gray" />
         <IconService color="gray" />
       </View>
-      <View>
+      <View style={{ height: 225 }}>
         <View>
-          <Text>Banner place holder</Text>
+          <ImageBackground
+            source={IMAGES.STATIC_USERPROFILE_BANNER}
+            resizeMode="contain"
+            style={{
+              height: 150,
+            }}
+          >
+            <Image
+              style={{
+                width: 150,
+                height: 150,
+                borderRadius: 150,
+                marginLeft: 25,
+                marginTop: 75,
+              }}
+              source={IMAGES.STATIC_USERPROFILE_AVATAR}
+            />
+          </ImageBackground>
         </View>
-        <View>
-          <Text>Profile Image</Text>
-        </View>
-        <View>
-          <Text>Edit Icon</Text>
+        <View style={{ flex: 1, alignItems: "flex-end" }}>
+          <TouchableOpacity
+            onPress={() => console.log("Edit profile")}
+            style={{
+              padding: 15,
+            }}
+          >
+            <IconEdit color="gray" />
+          </TouchableOpacity>
         </View>
       </View>
       <View>

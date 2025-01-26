@@ -47,3 +47,12 @@ export const IconService = (props: { color: string }) => (
     iconStyle={DEFAULT_ICON_STYLE}
   />
 );
+
+export const IconEdit = (props: { color: string }) => (
+  <FontAwesome6
+    name="pencil"
+    size={DEFAULT_ICON_SIZE}
+    color={props.color}
+    iconStyle={DEFAULT_ICON_STYLE}
+  />
+);
