@@ -56,3 +56,21 @@ export const IconEdit = (props: { color: string }) => (
     iconStyle={DEFAULT_ICON_STYLE}
   />
 );
+
+export const IconBadge = (props: { color: string }) => (
+  <FontAwesome6
+    name="certificate"
+    size={DEFAULT_ICON_SIZE}
+    color={props.color}
+    iconStyle={DEFAULT_ICON_STYLE}
+  />
+);
+
+export const IconEllipsis = (props: { color: string }) => (
+  <FontAwesome6
+    name="ellipsis"
+    size={DEFAULT_ICON_SIZE}
+    color={props.color}
+    iconStyle={DEFAULT_ICON_STYLE}
+  />
+);

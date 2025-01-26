@@ -26,3 +26,7 @@ Inside simulator, press cmd + D to open developer tool
 ```sh
 npm i @expo/vector-icons --save
 ```
+
+3. Profile layout
+
+- [ExampleUserProfile](./examples/ExampleUserProfile.tsx)
