@@ -17,7 +17,7 @@ export default function App() {
           <Text>Selected Item : {selectedItem}</Text>
         </View>
       )}
-      {/* <ExampleBoxItems setSelectedItem={setSelectedItem} /> */}
+      <ExampleBoxItems setSelectedItem={setSelectedItem} />
       <ExampleUserProfile />
     </SafeAreaView>
   );

@@ -30,3 +30,8 @@ npm i @expo/vector-icons --save
 3. Profile layout
 
 - [ExampleUserProfile](./examples/ExampleUserProfile.tsx)
+
+4. Debug
+
+- [Debug Expo React Native App](https://docs.expo.dev/debugging/tools/#pausing-on-breakpoints)
+- [VScode Extension for Expo](https://marketplace.visualstudio.com/items?itemName=expo.vscode-expo-tools)
