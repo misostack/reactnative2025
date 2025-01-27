@@ -3,6 +3,7 @@ import ExampleBoxItems from "./examples/ExampleBoxItems";
 import { useState } from "react";
 import ExampleUserProfile from "./examples/ExampleUserProfile";
 import ExampleRssReader from "./examples/ExampleRssReader";
+import ExampleTodoList from "./examples/ExampleTodoList";
 
 export default function App() {
   const [selectedItem, setSelectedItem] = useState<string | null>(null);
@@ -20,7 +21,8 @@ export default function App() {
       )}
       {/* <ExampleBoxItems setSelectedItem={setSelectedItem} /> */}
       {/* <ExampleUserProfile /> */}
-      <ExampleRssReader />
+      {/* <ExampleRssReader /> */}
+      <ExampleTodoList />
     </SafeAreaView>
   );
 }

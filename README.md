@@ -48,3 +48,19 @@ EXPO_PUBLIC_API_KEY=abc123
 6. Rss Reader
 
 - [Example Rss Reader](./examples/ExampleRssReader.tsx)
+
+7. Todo list
+
+- [Example Todolist](./examples/ExampleTodolist.tsx)
+
+State management : [zustand](https://zustand-demo.pmnd.rs/)
+
+```sh
+npm install zustand immer --save
+```
+
+- [React Native Storage](https://react-native-async-storage.github.io/async-storage/docs/install)
+
+```sh
+npx expo install @react-native-async-storage/async-storage
+```
