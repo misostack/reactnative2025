@@ -64,3 +64,11 @@ npm install zustand immer --save
 ```sh
 npx expo install @react-native-async-storage/async-storage
 ```
+
+8. Run React Native app on your device
+
+8.1. Run directly on your iphone
+
+```sh
+npx expo run:ios
+```

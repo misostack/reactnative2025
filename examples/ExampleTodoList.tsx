@@ -48,7 +48,7 @@ export default function ExampleTodoList() {
   return (
     <View style={{ padding: 10, gap: 20 }}>
       <View>
-        <Text style={styles.heading}>Todos</Text>
+        <Text style={styles.heading}>Plan your tasks everyday</Text>
       </View>
       <View style={{ flexDirection: "row", gap: 10 }}>
         <View style={{ width: 120 }}>
