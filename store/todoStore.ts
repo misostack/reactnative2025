@@ -22,7 +22,10 @@ type State = {
 type Actions = {
   addTodo: (todo: Todo) => void;
   removeTodo: (id: string) => void;
+  markDone: (id: string) => void;
   clearTodos: () => void;
+  getActiveTodos: () => Todo[];
+  getCompletedTodos: () => Todo[];
 };
 
 export const useTodoStore = create<State & Actions>()(
@@ -41,6 +44,20 @@ export const useTodoStore = create<State & Actions>()(
             set((state) => {
               state.todos = state.todos.filter((todo) => todo.id !== id);
             });
+          },
+          markDone: (id: string) => {
+            set((state) => {
+              const todo = state.todos.find((todo) => todo.id === id);
+              if (todo) {
+                todo.completed = !todo.completed;
+              }
+            });
+          },
+          getActiveTodos: () => {
+            return get().todos.filter((todo) => !todo.completed);
+          },
+          getCompletedTodos() {
+            return get().todos.filter((todo) => todo.completed);
           },
           clearTodos: () => {
             set((state) => {

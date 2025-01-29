@@ -74,3 +74,30 @@ export const IconEllipsis = (props: { color: string }) => (
     iconStyle={DEFAULT_ICON_STYLE}
   />
 );
+
+export const IconRemove = (props: { color: string }) => (
+  <FontAwesome6
+    name="trash"
+    size={DEFAULT_ICON_SIZE}
+    color={props.color}
+    iconStyle={DEFAULT_ICON_STYLE}
+  />
+);
+
+export const IconCheck = (props: { color: string }) => (
+  <FontAwesome6
+    name="check"
+    size={DEFAULT_ICON_SIZE}
+    color={props.color}
+    iconStyle={DEFAULT_ICON_STYLE}
+  />
+);
+
+export const IconDone = (props: { color: string }) => (
+  <FontAwesome6
+    name="check-circle"
+    size={DEFAULT_ICON_SIZE}
+    color={props.color}
+    iconStyle={DEFAULT_ICON_STYLE}
+  />
+);
