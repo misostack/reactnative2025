@@ -26,7 +26,12 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "sdkVersion": "52.0.0"
+    "sdkVersion": "52.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "0c177154-fdfe-42ae-bb9f-0027f7229482"
+      }
+    }
   },
   "name": "reactnative2025"
 }

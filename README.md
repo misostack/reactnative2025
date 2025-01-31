@@ -72,3 +72,12 @@ npx expo install @react-native-async-storage/async-storage
 ```sh
 npx expo run:ios
 ```
+
+9. Build with EAS
+
+```
+npm install -g eas-cli
+eas login
+eas build --platform ios
+eas submit --platform ios
+```
